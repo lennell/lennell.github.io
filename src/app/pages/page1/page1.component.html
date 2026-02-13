@@ -5,39 +5,20 @@
 
     <div style="display:inline-block">
       <div class="tds-input">
-      <tds-text-field
-        [(ngModel)]="txtDistance"
-        type="Text"
-        size="sm"
-        state="default"
-        autofocus
-        required
-        placeholder="Meters"
-        no-min-width
-        ngDefaultControl
-      ></tds-text-field>
+        <tds-text-field [(ngModel)]="txtDistance" type="Text" size="sm" state="default" autofocus required
+          placeholder="Meters" no-min-width ngDefaultControl></tds-text-field>
       </div>
       <div class="tds-input">
-        <tds-dropdown placeholder="Track"
-          size="sm" [defaultValue]="drpTrackDistance" (tdsChange)="doChangeDropdown($event)" required ngDefaultControl>
+        <tds-dropdown placeholder="Track" size="sm" [defaultValue]="drpTrackDistance"
+          (tdsChange)="doChangeDropdown($event)" required ngDefaultControl>
           <tds-dropdown-option value="200">200 m</tds-dropdown-option>
           <tds-dropdown-option value="400">400 m</tds-dropdown-option>
-          <tds-dropdown-option value="397">397 m</tds-dropdown-option>
         </tds-dropdown>
 
       </div>
       <div class="tds-input">
-      <tds-text-field
-        [(ngModel)]="txtTargetTime"
-        type="Text"
-        size="sm"
-        state="default"
-        required
-        placeholder="mm:ss"
-        no-min-width
-        ngDefaultControl
-        (tdsChange)="modifyAddColon()"
-      ></tds-text-field>
+        <tds-text-field [(ngModel)]="txtTargetTime" type="Text" size="sm" state="default" required placeholder="mm:ss"
+          no-min-width ngDefaultControl (tdsChange)="modifyAddColon()"></tds-text-field>
       </div>
       <div style="display:inline-block">
         <tds-button size="xs" text="Calc" (click)="doCalc()"></tds-button>
@@ -46,7 +27,7 @@
     <br><br>
     <tds-table vertical-dividers="false" compact-design="true" responsive="false">
       <tds-table-header>
-        <tds-header-cell column-key="lap" column-title="Lap" >Lap</tds-header-cell>
+        <tds-header-cell column-key="lap" column-title="Lap">Lap</tds-header-cell>
         <tds-header-cell column-key="time" column-title="Time">Time</tds-header-cell>
       </tds-table-header>
       <tds-table-body>
@@ -62,5 +43,5 @@
       </tds-table-body>
     </tds-table>
 
-</tds-block>
+  </tds-block>
 </ng-container>
