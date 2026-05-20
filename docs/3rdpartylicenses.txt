@@ -277,8 +277,6 @@ Apache-2.0
  
 
 
-tegel-loader
-
 zone.js
 MIT
 The MIT License
