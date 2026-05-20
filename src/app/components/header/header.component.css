@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.white-link {
+  color: white;
+  text-decoration: none;
+}
+
+.white-link:hover,
+.white-link:focus {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
