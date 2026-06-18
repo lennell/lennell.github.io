@@ -22,6 +22,9 @@ export class HeaderComponent {
 
   toggleMobileSideMenu() {
     this.mobileNavOpen = !this.mobileNavOpen;
+  }
 
+  closeMobileSideMenu() {
+    this.mobileNavOpen = false;
   }
 }

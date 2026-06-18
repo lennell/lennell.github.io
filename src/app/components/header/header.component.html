@@ -4,7 +4,7 @@
     id="demo-hamburger"
     aria-label="Open application drawer"
     aria-haspopup="false"
-    aria-expanded="true"
+    [attr.aria-expanded]="mobileNavOpen"
     (click)="toggleMobileSideMenu()"
   ></tds-header-hamburger>
 
@@ -20,5 +20,9 @@
 
 </tds-header>
 
-  
+  <nav class="mobile-nav" *ngIf="mobileNavOpen">
+    <a class="white-link" routerLink="/" [class.active]="isActive('/')" (click)="closeMobileSideMenu()">Lap calculator</a>
+    <a class="white-link" routerLink="/home" [class.active]="isActive('/home')" (click)="closeMobileSideMenu()">Live O Events</a>
+  </nav>
+
 </ng-container>

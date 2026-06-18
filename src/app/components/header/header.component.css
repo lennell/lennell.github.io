@@ -19,4 +19,24 @@
   .desktop-nav {
     display: none;
   }
+
+  .mobile-nav {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+  }
+
+  .mobile-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
